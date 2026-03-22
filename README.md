@@ -137,7 +137,7 @@ I'm transitioning into **Clinical AI Quality Engineering** — the role that sit
 
 This case study is one of several portfolio projects demonstrating the bias detection and audit methodology at the core of that work.
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/dung-vo-25963376/) | [Portfolio](https://github.com/dvo10781-droid)
+**Connect:** www.linkedin.com/in/ngoc-dung-vo-25963376 | [Portfolio](https://github.com/dvo10781-droid)
 
 ---
 
