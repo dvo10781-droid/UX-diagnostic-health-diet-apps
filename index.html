@@ -25,6 +25,7 @@
     <li><a href="#context">Context</a></li>
     <li><a href="#bias">Bias Types</a></li>
     <li><a href="#diagnosis">Diagnosis</a></li>
+    <li><a href="#marketing">Claims vs. Reality</a></li>
     <li><a href="#insights">Insights</a></li>
     <li><a href="#principles">Principles</a></li>
     <li><a href="#qe">QE Map</a></li>
@@ -62,7 +63,7 @@
 <!-- BIAS BANNER -->
 <div class="bias-banner" id="bias">
   <div class="bb-inner">
-    <div class="bb-title">Bias Types Identified — Google Responsible AI for Developers Framework</div>
+    <div class="bb-title">Bias Types Identified — Google Responsible AI for Developers Framework · v2 adds Implicit Bias</div>
     <div class="bb-grid">
       <div class="bb-item">
         <div class="bb-name">Selection Bias</div>
@@ -75,6 +76,10 @@
       <div class="bb-item">
         <div class="bb-name">Group Attribution Bias</div>
         <div class="bb-def">Even when cultural preference data is collected (Vietnamese, Thai, Japanese cuisines), the same Western defaults are delivered. Collecting data is not the same as using it.</div>
+      </div>
+      <div class="bb-item">
+        <div class="bb-name">Implicit Bias — v2</div>
+        <div class="bb-def">The system encodes assumptions about who the user is through default choices, visual language, and what needs no explanation. No rule says "Western users only." The bias lives in what the system treats as normal.</div>
       </div>
     </div>
   </div>
@@ -423,7 +428,120 @@
       </div>
     </div>
 
+    <!-- FAILURE 06 -->
+    <div class="diag-card">
+      <div class="diag-top">
+        <div style="background:var(--terra)"></div>
+        <div class="diag-head">
+          <div>
+            <div class="diag-meta">Failure 06 · Implicit Bias · v2 Addition</div>
+            <div class="diag-title">The Unencumbered Individual Assumption</div>
+            <div style="margin-top:6px"><span class="bias-tag">Implicit Bias</span><span class="bias-tag">Selection Bias</span></div>
+          </div>
+          <span class="sev sev-c">Critical</span>
+        </div>
+      </div>
+      <div class="diag-body">
+        <div>
+          <div class="col-head">System Assumption</div>
+          <div class="col-item">The user is an individual managing their own body, time, and food choices</div>
+          <div class="col-item">Self-care is separable from care for others</div>
+          <div class="col-item">"Food freedom" and "no restrictive diets" are universally available states</div>
+          <div class="col-item">Behavioral change is primarily a personal psychology problem</div>
+          <div class="col-item">"Love yourself first" is actionable advice for all users equally</div>
+        </div>
+        <div>
+          <div class="col-head">My Lived Experience</div>
+          <div class="col-item">I am not one person making choices for myself. I am a system — a logistics operation running food, schedule, budget, and culture for my whole family.</div>
+          <div class="col-item">My food choices are constrained by what my children will eat, what my budget allows this week, what takes 30 minutes after a night shift, and what my culture recognizes as a real meal that nourishes people.</div>
+          <div class="col-item">"Love yourself first" is right advice. But it assumes the self is available to be loved first. For a mother running a household system, the self comes last — not from low self-worth, but because the system she runs has no pause button.</div>
+          <div class="col-item">Every review says Noom was "built by psychologists." That psychology was built for a self that is separable from its context. Mine is not.</div>
+        </div>
+        <div>
+          <div class="col-head">Diagnostic Note</div>
+          <div class="note" style="color:var(--terra)">
+            <div class="note-flag">Root Cause — Implicit Bias</div>
+            The behavioral psychology research underlying these apps was conducted on a population where the individual self is assumed to be the primary unit of change. No rule says "not for mothers." The bias lives in what was never questioned: that the user has a self separable from the people she feeds, the budget she manages, and the schedule she does not control.
+            <br><br>
+            This is implicit bias — not in an explicit decision, but in structural invisibility. The caregiver as primary subject was never in the room when the model was built.
+            <div class="int-flag" style="margin-top:10px;background:rgba(181,71,42,0.07);border-color:rgba(181,71,42,0.3);color:var(--terra)">
+              <strong>→ Clinical AI Connection</strong>
+              Mental health AI tools trained on individualist behavioral markers misread caregiver lives as pathology. Waking at 2am = depression signal in training data. For a Vietnamese mother on night shift = Tuesday. Eating irregularly = disordered eating signal. For a mother who eats after her children are fed = love. The system reads her life as disorder because it was built to read a different life as normal.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- end diag-stack -->
+</section>
+
+<!-- MARKETING VS REALITY -->
+<section id="marketing">
+  <div class="sec-lbl">03b — What the Apps Claim vs. What I Observed</div>
+  <div class="sec-title">Measuring the System Against Its Own Stated Objectives</div>
+  <div class="sec-body">Every public review of these apps describes successful outcomes from users who already fit the system's model. The gap between what the marketing claims and what the system delivers to a non-default user is itself a bias finding.</div>
+
+  <div style="overflow-x:auto;">
+    <table class="mkt-table">
+      <thead>
+        <tr>
+          <th>App</th>
+          <th>Marketing Claim</th>
+          <th>What I Observed</th>
+          <th>Bias Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="app-tag noom-tag">Noom</td>
+          <td>"Comprehensive weight loss program <strong>customized to you</strong>"</td>
+          <td>Selected Vietnamese, Thai, Japanese cuisines. Received Pita Party Pizzas and Couscous on Day 1.</td>
+          <td><span class="bias-tag">Group Attribution</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag noom-tag">Noom</td>
+          <td>"<strong>No restrictive diets</strong> or foods"</td>
+          <td>Rice classified as yellow caution food. The staple food of my household and 3 billion people is a food to limit.</td>
+          <td><span class="bias-tag">Implicit Bias</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag noom-tag">Noom</td>
+          <td>"<strong>Complete personalized evaluation</strong>"</td>
+          <td>GLP-1 medication question asked regardless of user context. $270.94 charged for a plan that ignored stated preferences.</td>
+          <td><span class="bias-tag">Selection Bias</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag noom-tag">Noom</td>
+          <td>"Developed by <strong>psychologists</strong> to address the causes behind weight gain"</td>
+          <td>Psychology built for an unencumbered individual. No model for a mother whose food choices are household logistics, not personal preference.</td>
+          <td><span class="bias-tag">Implicit Bias</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag better-tag">BetterMe</td>
+          <td>"<strong>Personalized</strong> workout and meal plans based on your goals and preferences"</td>
+          <td>Challenge marketing uses Western women as the only visual default. Ballet Body Workout recommended for a night-shift mother of two.</td>
+          <td><span class="bias-tag">Implicit Bias</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag better-tag">BetterMe</td>
+          <td>"BetterMe <strong>adapts to your needs</strong>"</td>
+          <td>Default sleep goal: 8 continuous hours. For a night-shift worker: 0% goal on a work night. System reads my schedule as failure.</td>
+          <td><span class="bias-tag">Reporting Bias</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag better-tag">BetterMe</td>
+          <td>"Suitable for <strong>beginners or experienced</strong> fitness enthusiasts"</td>
+          <td>No option for a mother cooking for a family of four on a tight budget with 30 minutes available after a night shift. That user does not exist in the app's model.</td>
+          <td><span class="bias-tag">Implicit Bias</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="background:var(--terra-bg);border-left:3px solid var(--terra);padding:14px 16px;margin-top:14px;font-size:13px;color:var(--ink2);line-height:1.7;">
+    <strong style="color:var(--terra);font-family:monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;display:block;margin-bottom:6px;">Audit Note</strong>
+    These apps describe their failures as the user's failures. Every public review surfaces successful outcomes from users who already fit the model. The non-default user who drops out is not in the review data — she is the selection bias.
+  </div>
 </section>
 
 <!-- REFRAME -->
@@ -520,18 +638,20 @@
     <p>Writing this took longer than I expected — not because the analysis was hard, but because I had to stop blaming myself first. Every time I dropped out of a diet app, I assumed it was a discipline problem. Now I have a name for what it actually was: selection bias, reporting bias, group attribution bias. The Google Responsible AI for Developers course gave me the vocabulary. My own experience provided the evidence.</p>
     <p>The food I cook at home — cơm, canh, kho, cháo — is real food, made from scratch, nutritionally grounded. The food pyramid agrees. Noom classified it as a yellow caution food. That's not a minor UX problem. That's a core assumption encoded as science.</p>
     <p>What surprised me is how naturally the diagnostic framework came. I've spent years as a medical interpreter — finding exactly where communication breaks down between two parties who don't share the same context. <em>Where does the system's model of the user diverge from the actual user?</em> That question has the same answer in a diet app and in a clinical AI tool. The stakes are just different.</p>
-    <p>This is v1. The framework is real. And the methodology is the same one I intend to apply — more rigorously, with formal tooling — to clinical AI systems as I build this career.</p>
+    <p><em>The deepest finding came last — and it came from living, not from analysis.</em> These apps keep saying "find time for yourself," "love yourself first," "you deserve this." That advice is not wrong. But it assumes the self is separable from its context. For a mother, it is not. My food is my family's food. My time is the family's time. My relationship with food is actually a relationship between me, my children, my budget, my culture, and the clock. I am not one person making choices for myself. I am a system — a logistics operation. My meal decisions are not personal preferences. They are the household running. The apps were not built for that subject. And that absence — that structural invisibility — is implicit bias. Not a rule. Not a decision. Just: she was never in the room when the model was built.</p>
+    <p>This is v2. Failure 06 is new. The framework keeps growing — because the experience keeps teaching.</p>
   </div>
 </section>
 
 </div><!-- end wrap -->
 
 <footer>
-  <div class="foot-l">© 2026 Võ Ngọc Dung (DixieV) · UX Diagnostic Case Study · Draft v1 · March 2026</div>
+  <div class="foot-l">© 2026 Võ Ngọc Dung (DixieV) · UX Diagnostic Case Study · Draft v2 · March 2026</div>
   <div class="foot-tags">
     <span class="ftag">UX Audit</span>
     <span class="ftag">Bias Analysis</span>
     <span class="ftag">Google Responsible AI</span>
+    <span class="ftag">Implicit Bias</span>
     <span class="ftag">Clinical AI QE Portfolio</span>
   </div>
 </footer>
