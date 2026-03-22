@@ -1,7 +1,10 @@
 # UX Diagnostic: Why Diet & Cooking Apps Feel Unfriendly to Asian Users
  
 **Live case study →** [View the full audit](https://dvo10781-droid.github.io/UX-diagnostic-health-diet-apps)
-
+> **This is a portfolio case study, not a code repository.**  
+> GitHub is used here as a professional documentation platform — the same way  
+> designers, researchers, and clinical AI practitioners publish structured work.  
+> No coding background needed to read this.
 ---
 
 ## The Origin
@@ -18,13 +21,27 @@ That's not a localization gap. That's a system assumption problem. And it has a 
 
 ---
 
-## What This Is
+## What You're Looking At
 
-A structured **UX bias audit** of Noom and BetterMe — two leading health apps — using the **Google Responsible AI for Developers** bias classification framework.
+A structured bias audit of two leading health apps — Noom and BetterMe —  conducted by a Vietnamese woman who tried them, failed to stay, and then asked  a better question: *what if the apps are the problem?*
 
-This is not a redesign proposal. It is a diagnostic: five failure categories, each classified by bias type, traced to a root system assumption, and documented with live screenshots from my own trial sessions (March 2026).
+This is not a redesign proposal. It is a **diagnostic** — five failure categories,  each classified by bias type, traced to a root system assumption, and documented  with live screenshots from real trial sessions (March 2026).
+
+The analytical framework used here is the same one applied in  **Clinical AI Quality Engineering** — identifying default user assumptions,  classifying bias, and documenting failures before they reach patients.
 
 ---
+## The Origin
+
+I've tried every major diet app. I always dropped out.
+
+For a long time I thought it was a discipline problem. Then I started asking  a different question: *what if the apps are the problem?*
+
+I'm a Vietnamese woman in my forties. I work night shifts. I cook warm food —  rice, soups, shared dishes — for my whole family on a tight budget.  
+But eating a cold salad as a main meal? It is cold. It is dry. It does not fill a family.
+
+Noom asked me which cuisines I eat. I said: Vietnamese, Thai, Japanese and Chinese.  It served me **Pita Party Pizzas** and **Mango Chicken Salad with Couscous** on Day 1.
+
+That's not a localization gap. That's a system assumption problem. And it has a name.
 
 ## Bias Types Identified
 
@@ -100,7 +117,18 @@ The stakes in clinical AI are higher. The framework is the same.
 - Structured audit documentation: failure → bias type → evidence → root cause → principle
 
 ---
+## Project Status
 
+- [x] Diagnostic framework complete  
+- [x] Five failure categories with bias classification  
+- [x] Live screenshots — Noom and BetterMe (March 2026)  
+- [x] Food pyramid comparison — documented factual claim  
+- [x] Clinical AI QE skill mapping  
+- [x] Google Responsible AI framework applied  
+- [ ] Lactase intolerance citation (NIH/NCBI) — in progress for v2  
+- [ ] Peer review from clinical informatics contact — planned  
+
+---
 ## About the Author
 
 I'm **Võ Ngọc Dung (DixieV)** — medical interpreter (5 years), former Chevron/SLB energy professional (10 years), Geoscience MSc from the University of Adelaide, and frontend developer in training. I hold a certificate in Generative AI in Healthcare (University of Illinois / Coursera) and have completed Google's Responsible AI for Developers course.
@@ -113,17 +141,6 @@ This case study is one of several portfolio projects demonstrating the bias dete
 
 ---
 
-## Project Status
 
-- [x] Diagnostic framework complete
-- [x] Five failure categories with bias classification
-- [x] Live screenshots — Noom and BetterMe (March 2026)
-- [x] Food pyramid comparison — documented factual claim
-- [x] Clinical AI QE skill mapping
-- [x] Google Responsible AI framework applied
-- [ ] Lactase intolerance citation (NIH/NCBI) — in progress for v2
-- [ ] Peer review from clinical informatics contact — planned
-
----
 
 *Draft v1 · March 2026 · Screenshots used for educational and analytical purposes.*
