@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UX Diagnostic — Diet Apps & Asian Users · DixieV</title>
+<title>UX Diagnostic — Diet Apps & Asian Caregivers · DixieV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -12,7 +13,6 @@
 
 <div id="prog"></div>
 
-<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
   <span class="lightbox-close" onclick="closeLightbox()">✕</span>
   <img id="lightbox-img" src="" alt="">
@@ -21,40 +21,41 @@
 <nav>
   <div class="nav-name">DixieV · Portfolio</div>
   <ul class="nav-links">
-    <li><a href="#story">Story</a></li>
-    <li><a href="#context">Context</a></li>
-    <li><a href="#bias">Bias Types</a></li>
-    <li><a href="#diagnosis">Diagnosis</a></li>
-    <li><a href="#marketing">Claims vs. Reality</a></li>
-    <li><a href="#insights">Insights</a></li>
-    <li><a href="#principles">Principles</a></li>
-    <li><a href="#qe">QE Map</a></li>
+    <li><a href="#story">Summary</a></li>
+    <li><a href="#context">01 Context</a></li>
+    <li><a href="#bias">02 Bias</a></li>
+    <li><a href="#diagnosis">03 Diagnosis</a></li>
+    <li><a href="#marketing">04 Claims</a></li>
+    <li><a href="#principles">05 Principles</a></li>
+    <li><a href="#qe">06 QE Map</a></li>
+    <li><a href="#reflection">07 Reflection</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- HERO / TITLE BLOCK -->
 <div class="hero" id="story">
   <div class="hero-inner">
-    <div class="hero-eye">Origin of This Work</div>
-    <div class="hero-quote">
-      "I wasn't lazy. The apps just weren't built<br>for <em>someone like me.</em>"
+    <div class="hero-eye">Clinical AI Quality Portfolio · Võ Ngọc Dung (DixieV) · 2026</div>
+    <div class="hero-title-block">
+      <div class="hero-main-title">UX Diagnostic — Diet Apps & Asian Caregivers</div>
+      <div class="hero-sub-title">Noom + BetterMe · Bias Audit from a Vietnamese Night-Shift Mother</div>
     </div>
-    <div class="hero-body">
-      <div class="hero-p">
-        I've spent years trying to lose weight. I tried app after app — the ones you see advertised, the ones with the best ratings. I'd start with real motivation. Then, slowly, I'd stop. Not because I gave up, but because <strong>every single one kept asking me to live a life I don't live.</strong>
-        <br><br>
-        Track your Greek yogurt. Here's a 45-minute recipe for one. Use a meal plan that costs more than my family grocery budget.
+    <div class="hero-summary-box">
+      <div class="hero-summary-label">Summary</div>
+      <div class="hero-summary-text">
+        I used to think I was just "failing" every diet app I tried. Then I learned enough about UX and Responsible AI to ask a different question: <strong>what if the system is failing users like me?</strong>
       </div>
-      <div class="hero-p">
-        I'm a Vietnamese woman in my forties. I work from home. I cook warm food — rice, soups, shared dishes — for my whole family on a tight budget. I enjoy all kinds of food. But <strong>eating a cold salad as a main meal? It is cold. It is dry. It does not fill a family.</strong>
-        <br><br>
-        At some point I stopped blaming myself and started asking: <strong>what if the apps are the problem?</strong> That question became this diagnostic — using the same bias framework I learned from Google's Responsible AI for Developers course.
+      <div class="hero-summary-text" style="margin-top:10px;">
+        This case study is a UX and bias diagnostic of two commercial diet apps (Noom and BetterMe) based on my own use as a Vietnamese woman in her 40s, working night shifts and cooking warm food for a family on a tight budget. Using Google-style fairness and bias concepts, I identify <strong>six systemic failures</strong> — including selection bias, reporting bias, group attribution bias, and one critical implicit bias I call the <strong>"Unencumbered Individual Assumption."</strong>
+      </div>
+      <div class="hero-summary-text" style="margin-top:10px;">
+        I am not building an app here. I am treating existing apps as "black-box" AI-adjacent systems: testing their assumptions, documenting where they misread caregiver lives as non-compliance, and translating those findings into design principles and clinical AI quality engineering skills.
       </div>
     </div>
     <div class="hero-meta">
       <span class="hmeta">Võ Ngọc Dung (DixieV)</span>
-      <span class="hmeta">Noom · BetterMe — live screenshots</span>
-      <span class="hmeta">Draft v1 · March 2026</span>
+      <span class="hmeta">Noom · BetterMe · Live Screenshots</span>
+      <span class="hmeta">Draft v2 · March 2026</span>
       <span class="hmeta">Clinical AI QE Portfolio</span>
     </div>
   </div>
@@ -63,106 +64,112 @@
 <!-- BIAS BANNER -->
 <div class="bias-banner" id="bias">
   <div class="bb-inner">
-    <div class="bb-title">Bias Types Identified — Google Responsible AI for Developers Framework · v2 adds Implicit Bias</div>
+    <div class="bb-title">02 — Bias Framework · Google Responsible AI for Developers · Four Types Identified</div>
     <div class="bb-grid">
       <div class="bb-item">
         <div class="bb-name">Selection Bias</div>
-        <div class="bb-def">These apps were optimized for users who succeeded with Western eating patterns, conventional schedules, and standard household structures. The non-default user is invisible in the training data.</div>
+        <div class="bb-def">Apps optimized for users who succeeded with Western eating patterns, conventional schedules, and standard household structures. The non-default user is invisible in the training data.</div>
       </div>
       <div class="bb-item">
         <div class="bb-name">Reporting Bias</div>
-        <div class="bb-def">The apps surface and reward behaviors that fit their model: daily streaks, precise individual logging, standard sleep patterns. Night-shift schedules and shared dishes appear as "no data" or failures.</div>
+        <div class="bb-def">Daily streaks, precise individual logging, and standard sleep patterns are rewarded. Night-shift schedules and shared dishes appear as "no data" or compliance failures.</div>
       </div>
       <div class="bb-item">
         <div class="bb-name">Group Attribution Bias</div>
-        <div class="bb-def">Even when cultural preference data is collected (Vietnamese, Thai, Japanese cuisines), the same Western defaults are delivered. Collecting data is not the same as using it.</div>
+        <div class="bb-def">Cultural preferences collected (Vietnamese, Thai, Japanese cuisines) but Western defaults still delivered. Collecting data is not the same as using it.</div>
       </div>
       <div class="bb-item">
-        <div class="bb-name">Implicit Bias — v2</div>
-        <div class="bb-def">The system encodes assumptions about who the user is through default choices, visual language, and what needs no explanation. No rule says "Western users only." The bias lives in what the system treats as normal.</div>
+        <div class="bb-name">Implicit Bias ★ v2</div>
+        <div class="bb-def">The system encodes who the "normal" user is through defaults and visual language. No rule says "not for caregivers." The bias lives in who was never in the room when the model was built.</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- INTEGRITY NOTE -->
+<!-- INTEGRITY -->
 <div class="integrity-bar">
   <div class="int-lbl">⚠ Evidence Transparency</div>
-  <div class="int-txt">Based on <strong>personal user experience + live app screenshots</strong> from Noom and BetterMe trials, March 2026. Statistical claims flagged where independent citation is needed. Simple excluded — requires payment before trial access, which is itself a Failure 02 finding.</div>
+  <div class="int-txt">Personal user experience + live app screenshots, Noom and BetterMe trials March 2026. No access to internal data, models, or A/B tests. No controlled study or health outcomes measured. All examples from one user — but patterns match known concerns about one-size-fits-all personalization in nutrition apps. Statistical claims flagged where independent citation is needed.</div>
 </div>
 
-<!-- SKILLS -->
+<!-- SKILLS BAR -->
 <div class="skills-bar">
   <div class="sb-lbl">Clinical AI QE Skills →</div>
-  <span class="chip ct">Default User Bias Detection</span>
-  <span class="chip cm">Failure Mode Categorization</span>
-  <span class="chip cs">Demographic Subgroup Analysis</span>
-  <span class="chip co">UX/UI Flow Evaluation</span>
-  <span class="chip cp">Audit Documentation</span>
-  <span class="chip ct">Root Cause Analysis</span>
-  <span class="chip cm">Google Responsible AI Framework</span>
+  <span class="chip ct">Bias Taxonomy & Labeling</span>
+  <span class="chip cm">Implicit Bias Detection</span>
+  <span class="chip cs">Ground Truth Validation</span>
+  <span class="chip co">Specification Compliance Testing</span>
+  <span class="chip cp">Evidence Integrity</span>
+  <span class="chip ct">Audit Documentation</span>
+  <span class="chip cm">Risk-Informed Mitigation</span>
 </div>
 
 <div class="wrap">
 
-<!-- USER CONTEXT -->
+<!-- 01 CONTEXT & METHODS -->
 <section id="context">
-  <div class="sec-lbl">01 — Who This Is For</div>
-  <div class="sec-title">The Default User These Apps Were Not Built For</div>
-  <div class="sec-body">This analysis starts from lived experience. The segment below is me — and millions who eat, cook, and make decisions the same way. The fact that I kept failing these apps is not a motivation problem. It is a design signal.</div>
-  <div class="seg-grid">
-    <div class="seg-card"><div class="seg-icon">👩</div><div class="seg-lbl">Who</div><div class="seg-val">Vietnamese woman, mid-forties. Work from home. Primary household cook.</div></div>
-    <div class="seg-card"><div class="seg-icon">🍚</div><div class="seg-lbl">How I Eat</div><div class="seg-val">Warm food daily. Rice, soups, stir-fries, shared dishes. Cold salad as a main meal is cold, dry, and doesn't fill a family.</div></div>
-    <div class="seg-card"><div class="seg-icon">👨‍👩‍👧‍👦</div><div class="seg-lbl">Who I Cook For</div><div class="seg-val">The whole family. One cooking session, one pot, everyone eats from it.</div></div>
-    <div class="seg-card"><div class="seg-icon">💵</div><div class="seg-lbl">Budget Reality</div><div class="seg-val">Tight household budget. I track app cancellation dates on Google Calendar so I don't get surprise-charged.</div></div>
-    <div class="seg-card"><div class="seg-icon">🌙</div><div class="seg-lbl">Sleep Reality</div><div class="seg-val">Night shift worker, 6 days/week. Sleep is split across two blocks. An 8-hour continuous sleep goal is structurally impossible.</div></div>
-    <div class="seg-card"><div class="seg-icon">🌏</div><div class="seg-lbl">Broader Segment</div><div class="seg-val">Vietnamese, ASEAN, Chinese households. Hundreds of millions globally. Not an edge case.</div></div>
+  <div class="sec-lbl">01 — Context & Methods</div>
+  <div class="sec-title">Who I Am · What This Is · What It Is Not</div>
+
+  <div class="who-grid">
+    <div class="who-story">
+      <div class="who-label">Who I Am</div>
+      <p>I am a Vietnamese woman in my 40s. I work night shifts. I cook warm food for my children and husband every day on a tight budget. A cold salad as a main meal is not my life — it is cold, it is dry, and it does not feed a family.</p>
+      <p style="margin-top:10px;">For years I used diet apps, felt like I could not "stick to the plan," and quietly blamed myself. I stopped using them, but the frustration stayed. Only when I started learning frontend development, Responsible AI, and AI in Healthcare did I have the language to describe what felt wrong.</p>
+    </div>
+    <div class="who-cols">
+      <div class="scope-box">
+        <div class="scope-box-lbl">What This Is</div>
+        <div class="scope-item"><span class="sdot"></span>A personal but structured UX diagnostic of two live apps, from the perspective of a non-default user</div>
+        <div class="scope-item"><span class="sdot"></span>A bias audit using Google Responsible AI fairness and bias concepts</div>
+        <div class="scope-item"><span class="sdot"></span>A first portfolio project to build skills toward AI quality and safety roles in healthcare</div>
+        <div class="scope-item"><span class="sdot"></span>Products: Noom and BetterMe as available March 2026. Simple excluded — paywall before trial = itself a Failure 02 finding.</div>
+      </div>
+      <div class="scope-box" style="margin-top:10px;">
+        <div class="scope-box-lbl">What This Is Not</div>
+        <div class="scope-item"><span class="sdot"></span>A new app concept or redesign proposal</div>
+        <div class="scope-item"><span class="sdot"></span>A randomized study with outcomes data</div>
+        <div class="scope-item"><span class="sdot"></span>A claim that Noom or BetterMe are "bad" products overall</div>
+        <div class="scope-item"><span class="sdot"></span>A peer-reviewed study — personal observational audit, honestly stated</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="method-box">
+    <div class="method-label">Method</div>
+    <div class="method-steps">
+      <div class="method-step"><span class="mstep-n">1</span><span>Used each app for several days as a paying or trial user. Captured screenshots, flows, and notes.</span></div>
+      <div class="method-step"><span class="mstep-n">2</span><span>Tagged every surprising or painful moment with possible bias types: selection, reporting, group attribution, implicit.</span></div>
+      <div class="method-step"><span class="mstep-n">3</span><span>Compared food classification to public dietary guidance (USDA food pyramid for grains).</span></div>
+      <div class="method-step"><span class="mstep-n">4</span><span>Built a "marketing vs reality" table mapping app claims to what I actually observed.</span></div>
+      <div class="method-step"><span class="mstep-n">5</span><span>Derived design principles and clinical AI QE skill mappings from the failure patterns.</span></div>
+    </div>
   </div>
 </section>
 
-<!-- SCOPE -->
-<section id="scope">
-  <div class="sec-lbl">02 — Scope & Method</div>
-  <div class="sec-title">What This Is — and What It Honestly Is Not</div>
-  <div class="scope-cols">
-    <div class="scope-box">
-      <div class="scope-box-lbl">What This Diagnostic Is</div>
-      <div class="scope-item"><span class="sdot"></span>Structured analysis of personal app experience + live screenshots (Mar 2026)</div>
-      <div class="scope-item"><span class="sdot"></span>Bias classification using Google Responsible AI for Developers framework</div>
-      <div class="scope-item"><span class="sdot"></span>Apps tested: Noom and BetterMe trials. Simple excluded — paywall before trial.</div>
-      <div class="scope-item"><span class="sdot"></span>Demonstration of bias audit methodology applicable to consumer and clinical AI</div>
-    </div>
-    <div class="scope-box">
-      <div class="scope-box-lbl">Honest Scope Limits</div>
-      <div class="scope-item"><span class="sdot"></span>Not a peer-reviewed study — personal observational audit</div>
-      <div class="scope-item"><span class="sdot"></span>Diagnosis only — not a redesign proposal</div>
-      <div class="scope-item"><span class="sdot"></span>Population-level lactase statistics need NIH/NCBI citation before final publication</div>
-      <div class="scope-item"><span class="sdot"></span>Screenshots from one user session — acknowledged as a single data point</div>
-    </div>
-  </div>
-</section>
-
-<!-- DIAGNOSIS -->
+<!-- 03 DIAGNOSIS -->
 <section id="diagnosis">
   <div class="sec-lbl">03 — UX Diagnosis</div>
-  <div class="sec-title">Five Failure Categories — Each Traced to a Root Assumption</div>
-  <div class="sec-body">Every failure below is predictable once you see the assumption underneath it. Each is classifiable under the Google Responsible AI bias framework. Click any screenshot to enlarge.</div>
+  <div class="sec-title">Six Failure Categories — Each Traced to a Root Assumption</div>
+  <div class="sec-body">Instead of asking "Why can't I follow the plan?", I reframed the question: <em>"Which hidden assumptions in these apps conflict with my real life — and what type of bias does each one represent?"</em>
+  <br><br>
+  Across Noom and BetterMe, I found six recurring failure patterns. Each one looks small on a single screen — a default, a label, a missing option — but together they tell a clear story: the system was optimized for individual Western users with stable schedules and disposable income, not for caregivers running a household.</div>
 
   <!-- HEADLINE SEQUENCE -->
   <div class="headline-seq">
     <div class="hs-label">★ The Core Argument — Input vs. Output</div>
     <div class="hs-row">
       <div class="hs-item">
-        <img src="assets/images/noom/12-cuisine-select-japanese.jpg" alt="Noom cuisine select Japanese" class="hs-img" onclick="openLightbox(this)">
+        <img src="assets/images/noom/12-cuisine-select-japanese.jpg" alt="Noom cuisine select" class="hs-img" onclick="openLightbox(this)">
         <div class="hs-cap">Step 1: Japanese, Thai, Vietnamese selected</div>
       </div>
       <div class="hs-item">
-        <img src="assets/images/noom/13-cuisine-vietnamese-thai.jpg" alt="Noom cuisine Vietnamese Thai selected" class="hs-img" onclick="openLightbox(this)">
-        <div class="hs-cap">Step 2: Vietnamese ✓ Thai ✓ confirmed</div>
+        <img src="assets/images/noom/13-cuisine-vietnamese-thai.jpg" alt="Noom Vietnamese Thai" class="hs-img" onclick="openLightbox(this)">
+        <div class="hs-cap">Step 2: Vietnamese ✓ Thai ✓</div>
       </div>
       <div class="arrow-label">→</div>
       <div class="hs-item">
-        <img src="assets/images/noom/15-meal-plan-couscous-pita.jpg" alt="Noom meal plan showing couscous and pita pizza" class="hs-img" onclick="openLightbox(this)">
+        <img src="assets/images/noom/15-meal-plan-couscous-pita.jpg" alt="Noom couscous output" class="hs-img" onclick="openLightbox(this)">
         <div class="hs-cap">Output: Pita Pizzas. Couscous. Day 1.</div>
       </div>
     </div>
@@ -173,10 +180,9 @@
 
   <div class="diag-stack">
 
-    <!-- FAILURE 01 -->
+    <!-- F01 -->
     <div class="diag-card">
-      <div class="diag-top">
-        <div style="background:var(--terra)"></div>
+      <div class="diag-top"><div style="background:var(--terra)"></div>
         <div class="diag-head">
           <div>
             <div class="diag-meta">Failure 01 · Cultural Meal Model</div>
@@ -191,39 +197,37 @@
           <div class="col-head">System Assumption</div>
           <div class="col-item">Eating is an individual activity</div>
           <div class="col-item">One person, one plate, one measurable portion</div>
-          <div class="col-item">Meal plans are designed for individuals</div>
-          <div class="col-item">Cultural preference data changes meal output</div>
+          <div class="col-item">Cuisine preference data changes meal output</div>
+          <div class="col-item">"Cook for household" is not a user scenario</div>
         </div>
         <div>
-          <div class="col-head">My Lived Experience</div>
-          <div class="col-item">I cook cơm, canh, kho — one pot, everyone eats from it</div>
-          <div class="col-item">Selected Vietnamese, Thai, Japanese. Received Pita Pizzas and Couscous on Day 1.</div>
-          <div class="col-item">Day 2: Turkey Cheddar Tacos</div>
-          <div class="col-item">Zero concept of "cook for household" in the entire app</div>
+          <div class="col-head">What I Observed</div>
+          <div class="col-item">Selected Vietnamese, Thai, Japanese. Received Pita Pizzas and Couscous Day 1. Turkey Cheddar Tacos Day 2.</div>
+          <div class="col-item">I cook cơm, canh, kho — one pot, everyone eats from it. No option exists in the app for this.</div>
+          <div class="col-item">"I cook for my family" is not available as an eating habit anywhere in onboarding.</div>
         </div>
         <div>
           <div class="col-head">Diagnostic Note</div>
           <div class="note" style="color:var(--terra)">
             <div class="note-flag">Root Cause</div>
-            The data model treats individual Western eating as the universal default. Collecting cultural preference data without using it is Group Attribution Bias — the system attributes the same outputs regardless of the demographic input provided.
+            The data model treats individual Western eating as universal default. Collecting cultural preference data without using it is Group Attribution Bias — same outputs regardless of demographic input.
           </div>
         </div>
       </div>
       <div class="evidence-strip">
-        <div class="ev-lbl">Evidence Screenshots — click to enlarge</div>
+        <div class="ev-lbl">Evidence — click to enlarge</div>
         <div class="ev-row">
-          <div class="ev-item"><img src="assets/images/noom/12-cuisine-select-japanese.jpg" alt="Cuisine selection Japanese" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Cuisine input: Vietnamese, Thai, Japanese</div></div>
-          <div class="ev-item"><img src="assets/images/noom/13-cuisine-vietnamese-thai.jpg" alt="Vietnamese Thai selected" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Vietnamese ✓ Thai ✓</div></div>
-          <div class="ev-item"><img src="assets/images/noom/15-meal-plan-couscous-pita.jpg" alt="Meal plan couscous pita" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Output: Pita pizza. Couscous.</div></div>
-          <div class="ev-item"><img src="assets/images/noom/08-eating-habits-question.jpg" alt="Eating habits question" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"I cook for my family" — not an option</div></div>
+          <div class="ev-item"><img src="assets/images/noom/12-cuisine-select-japanese.jpg" alt="Cuisine select" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Cuisine input: Vietnamese, Thai, Japanese</div></div>
+          <div class="ev-item"><img src="assets/images/noom/13-cuisine-vietnamese-thai.jpg" alt="Vietnamese Thai" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Vietnamese ✓ Thai ✓</div></div>
+          <div class="ev-item"><img src="assets/images/noom/15-meal-plan-couscous-pita.jpg" alt="Couscous output" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Output: Pita pizza, couscous</div></div>
+          <div class="ev-item"><img src="assets/images/noom/08-eating-habits-question.jpg" alt="Eating habits" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"I cook for family" — not an option</div></div>
         </div>
       </div>
     </div>
 
-    <!-- FAILURE 02 -->
+    <!-- F02 -->
     <div class="diag-card">
-      <div class="diag-top">
-        <div style="background:var(--ochre)"></div>
+      <div class="diag-top"><div style="background:var(--ochre)"></div>
         <div class="diag-head">
           <div>
             <div class="diag-meta">Failure 02 · Economic Context</div>
@@ -237,44 +241,42 @@
         <div>
           <div class="col-head">System Assumption</div>
           <div class="col-item">Users have disposable income for premium subscriptions</div>
-          <div class="col-item">Stacked in-app purchases are a normal, acceptable model</div>
-          <div class="col-item">GLP-1 medication ($800–1000/month) is a routine default question</div>
-          <div class="col-item">45-minute individual meal prep time is available</div>
+          <div class="col-item">Stacked in-app challenges ($7.99–$14.99) inside a paid subscription are acceptable</div>
+          <div class="col-item">GLP-1 medication ($800–1000/mo) is a routine default question</div>
         </div>
         <div>
-          <div class="col-head">My Lived Experience</div>
-          <div class="col-item">Noom: $270.94 charged March 29 for a plan that serves me couscous</div>
-          <div class="col-item">BetterMe: subscription fee + $14.99 (Flatter Belly) + $7.99 (Clean Eating) + $9.99 (Better Sleep) — stacked payments inside a paid app</div>
-          <div class="col-item">I now keep a Google Calendar reminder to cancel before renewal — that cognitive burden is a design choice</div>
-          <div class="col-item">Simple required payment before any trial access. Excluded without fair evaluation.</div>
+          <div class="col-head">What I Observed</div>
+          <div class="col-item">Noom: $270.94 charged for a plan that ignores stated cuisine preferences</div>
+          <div class="col-item">BetterMe: subscription fee + $14.99 + $7.99 + $9.99 stacked inside a paid app</div>
+          <div class="col-item">I now track cancellation dates on Google Calendar. That cognitive and financial burden is a design choice.</div>
+          <div class="col-item">Simple: excluded — payment required before any trial access. That exclusion is itself this failure.</div>
         </div>
         <div>
           <div class="col-head">Diagnostic Note</div>
           <div class="note" style="color:var(--ochre)">
             <div class="note-flag">Root Cause</div>
-            The monetization model assumes unlimited disposable income. For a budget-managing household, stacked payments are not friction — they are a trust collapse. Selection Bias means users who persist are already those who can afford to.
+            Selection Bias: users who persist are already those who can afford to. Budget-managing households experience stacked payments as a trust collapse, not friction.
           </div>
         </div>
       </div>
       <div class="evidence-strip">
-        <div class="ev-lbl">Evidence Screenshots</div>
+        <div class="ev-lbl">Evidence</div>
         <div class="ev-row">
-          <div class="ev-item"><img src="assets/images/noom/04-pricing-270.jpg" alt="Noom pricing $270" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Noom $270.94 for western meal plan</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/01-challenges-western-body.jpg" alt="BetterMe challenges $14.99" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">$14.99 challenge inside paid subscription</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/02-clean-eating-799.jpg" alt="Clean eating $7.99" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">+$7.99 Clean Eating</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/05-sleep-999.jpg" alt="Better sleep $9.99" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">+$9.99 Better Sleep</div></div>
-          <div class="ev-item"><img src="assets/images/noom/02-glp1-question.jpg" alt="GLP-1 question" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">GLP-1 drug question — $800/mo medication as default</div></div>
+          <div class="ev-item"><img src="assets/images/noom/04-pricing-270.jpg" alt="Noom $270" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Noom $270.94</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/01-challenges-western-body.jpg" alt="BetterMe $14.99" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">$14.99 inside paid sub</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/02-clean-eating-799.jpg" alt="$7.99" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">+$7.99 Clean Eating</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/05-sleep-999.jpg" alt="$9.99" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">+$9.99 Better Sleep</div></div>
+          <div class="ev-item"><img src="assets/images/noom/02-glp1-question.jpg" alt="GLP-1" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">GLP-1 drug as default question</div></div>
         </div>
       </div>
     </div>
 
-    <!-- FAILURE 03 -->
+    <!-- F03 -->
     <div class="diag-card">
-      <div class="diag-top">
-        <div style="background:var(--slate)"></div>
+      <div class="diag-top"><div style="background:var(--slate)"></div>
         <div class="diag-head">
           <div>
-            <div class="diag-meta">Failure 03 · Cognitive Load</div>
+            <div class="diag-meta">Failure 03 · Cognitive Load & Schedule</div>
             <div class="diag-title">Precision-as-Virtue + Schedule Universality</div>
             <div style="margin-top:6px"><span class="bias-tag">Selection Bias</span><span class="bias-tag">Reporting Bias</span></div>
           </div>
@@ -285,45 +287,44 @@
         <div>
           <div class="col-head">System Assumption</div>
           <div class="col-item">Granular daily logging produces better outcomes</div>
-          <div class="col-item">Daily streaks are universally motivating</div>
+          <div class="col-item">Daily streaks universally motivate</div>
           <div class="col-item">Users sleep in a standard overnight pattern</div>
-          <div class="col-item">8 hours of continuous sleep is a realistic default goal</div>
+          <div class="col-item">8 continuous hours of sleep is a realistic default goal</div>
         </div>
         <div>
-          <div class="col-head">My Lived Experience</div>
-          <div class="col-item">Noom: simple fish dish = 4 separate entries with oz measurements</div>
-          <div class="col-item">BetterMe sleep tracker: "Your goal: 8h." Saturday March 21: 0% of sleep goal. "We need more data." The data is: I was working a night shift.</div>
-          <div class="col-item">Daily streak: "Complete a healthy habit each day." A broken streak on a night shift is not failure — it is Tuesday.</div>
-          <div class="col-item">BetterMe photo AI: 3.53 oz tomatoes, 2.65 oz lettuce from a family plate. Decimal precision from a shared dish is theater, not data.</div>
+          <div class="col-head">What I Observed</div>
+          <div class="col-item">Simple fish dish = 4 separate entries with oz measurements in Noom</div>
+          <div class="col-item">BetterMe sleep goal: 8h. Saturday March 21: 0% of goal. "We need more data." The data is: I was working a night shift.</div>
+          <div class="col-item">A broken streak on a night shift is not failure — it is Tuesday.</div>
+          <div class="col-item">BetterMe photo AI: 3.53oz tomatoes from a family plate. Decimal precision from a shared dish is theater, not data.</div>
         </div>
         <div>
           <div class="col-head">Diagnostic Note</div>
           <div class="note" style="color:var(--slate)">
             <div class="note-flag">Root Cause</div>
-            Reporting Bias: the system only measures what fits its model. Irregular schedules and shared meals show as "no data" rather than as valid user behavior. The system penalizes what it cannot model.
+            Reporting Bias: the system only measures what fits its model. Irregular schedules and shared meals register as "no data" rather than as valid user behavior — the system penalizes what it cannot model.
           </div>
         </div>
       </div>
       <div class="evidence-strip">
-        <div class="ev-lbl">Evidence Screenshots</div>
+        <div class="ev-lbl">Evidence</div>
         <div class="ev-row">
-          <div class="ev-item"><img src="assets/images/noom/06-meal-review-fish.jpg" alt="Meal review fish cake" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">4 entries for one simple fish dish</div></div>
-          <div class="ev-item"><img src="assets/images/noom/05-streak-screen.jpg" alt="Streak screen" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Daily streak guilt mechanic</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/07-sleep-goal-8h.jpg" alt="Sleep goal 8h" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Sleep goal 8h. Night shift: 0%.</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/08-sleep-stages-empty.jpg" alt="Sleep stages empty" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"We need more data" — I was at work</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/12-photo-log-meatballs.jpg" alt="BetterMe photo log" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">3.53oz tomatoes from a shared plate</div></div>
+          <div class="ev-item"><img src="assets/images/noom/06-meal-review-fish.jpg" alt="Fish 4 entries" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">4 entries for one fish dish</div></div>
+          <div class="ev-item"><img src="assets/images/noom/05-streak-screen.jpg" alt="Streak" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Daily streak guilt mechanic</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/07-sleep-goal-8h.jpg" alt="Sleep 8h" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">8h goal. Night shift: 0%.</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/08-sleep-stages-empty.jpg" alt="Sleep empty" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"Need more data" = I was at work</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/12-photo-log-meatballs.jpg" alt="Photo log" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">3.53oz tomatoes from shared plate</div></div>
         </div>
       </div>
     </div>
 
-    <!-- FAILURE 04 -->
+    <!-- F04 -->
     <div class="diag-card">
-      <div class="diag-top">
-        <div style="background:var(--plum)"></div>
+      <div class="diag-top"><div style="background:var(--plum)"></div>
         <div class="diag-head">
           <div>
-            <div class="diag-meta">Failure 04 · Physiological + Food Classification</div>
-            <div class="diag-title">Assumed Universality — Including Food Pyramid Contradiction</div>
+            <div class="diag-meta">Failure 04 · Food Classification</div>
+            <div class="diag-title">Food Classification vs. Nutrition Science</div>
             <div style="margin-top:6px"><span class="bias-tag">Selection Bias</span><span class="bias-tag">Group Attribution Bias</span></div>
           </div>
           <span class="sev sev-h">High</span>
@@ -338,19 +339,19 @@
           <div class="col-item">AI face-scan health assessment applies across all populations</div>
         </div>
         <div>
-          <div class="col-head">My Lived Experience</div>
-          <div class="col-item">Rice is YELLOW in Noom. The USDA Food Pyramid puts whole grains at its base — the foundation of a healthy diet. Noom contradicts established nutritional guidance for the food that anchors this population's diet.</div>
-          <div class="col-item">Green food list: skim milk, sauerkraut, cottage cheese, Swiss cheese. Not one item from Vietnamese daily cooking.</div>
-          <div class="col-item">The food I cook from scratch — real food — is penalized by a classification system built for a different kitchen.</div>
+          <div class="col-head">What I Observed</div>
+          <div class="col-item">Rice = YELLOW in Noom. The USDA Food Pyramid places whole grains at its base — the foundation of a healthy diet. Noom directly contradicts established guidance for the food that anchors this population's diet.</div>
+          <div class="col-item">Green food list: skim milk, sauerkraut, cottage cheese. Not one item from Vietnamese daily cooking.</div>
+          <div class="col-item">The food I cook from scratch every day — real food — is penalized by a classification system built for a different kitchen.</div>
         </div>
         <div>
           <div class="col-head">Diagnostic Note</div>
           <div class="note" style="color:var(--plum)">
             <div class="note-flag">Root Cause</div>
-            The food classification encodes Western dietary assumptions as universal truth — directly contradicting established nutritional guidance for this population's staple foods. This is a core model assumption, not a localization gap.
+            The food classification encodes Western assumptions as universal truth, contradicting USDA guidance for staple foods of this population. Not a localization gap — a core model assumption.
             <div class="int-flag">
               <strong>⚠ Integrity Note</strong>
-              Lactase intolerance statistics are directionally supported by research but need NIH/NCBI citation. The food pyramid comparison is a documentable factual claim that stands independently.
+              Lactase intolerance statistics need NIH/NCBI citation — flagged for v3.
             </div>
           </div>
         </div>
@@ -360,35 +361,32 @@
         <div class="pyramid-compare">
           <div class="pyr-box">
             <div class="pyr-label">Noom Classification</div>
-            <img src="assets/images/noom/07-food-wheel.jpg" alt="Noom Green Yellow Orange food wheel" onclick="openLightbox(this)" style="cursor:zoom-in">
-            <div class="pyr-note">Rice = <strong style="color:var(--ochre)">Yellow (caution)</strong>. Skim milk = Green. Daily staple of 3+ billion people classified as a food to limit.</div>
+            <img src="assets/images/noom/07-food-wheel.jpg" alt="Noom food wheel" onclick="openLightbox(this)" style="cursor:zoom-in;max-height:140px;width:auto;margin-bottom:8px;">
+            <div class="pyr-note">Rice = <strong style="color:var(--ochre)">Yellow (caution)</strong>. Skim milk = Green. Staple of 3 billion people classified as a food to limit.</div>
           </div>
           <div class="pyr-box">
             <div class="pyr-label">USDA Food Pyramid — Established Guidance</div>
-            <img src="assets/images/reference/usda-food-pyramid.jpg" alt="USDA food pyramid" onclick="openLightbox(this)" style="cursor:zoom-in">
-            <div class="pyr-note"><strong style="color:var(--moss)">Whole Grains at the base</strong> — the foundation of a healthy diet. Rice is whole grain. The food I cook is nutritionally sound.</div>
+            <img src="assets/images/reference/usda-food-pyramid.jpg" alt="USDA pyramid" onclick="openLightbox(this)" style="cursor:zoom-in;max-height:140px;width:auto;margin-bottom:8px;">
+            <div class="pyr-note"><strong style="color:var(--moss)">Whole Grains at the base.</strong> Rice is whole grain. The food I cook is nutritionally sound. Noom says otherwise.</div>
           </div>
         </div>
-        <div class="pyr-verdict">
-          <p>The food I cook at home — rice, fish, vegetables, soup — is <strong>real food</strong>, made from scratch, aligned with established nutritional guidance. Noom classifies it as a caution food. This is culturally-encoded bias presented as nutrition science.</p>
-        </div>
-        <div class="ev-row" style="margin-top:12px">
-          <div class="ev-item"><img src="assets/images/noom/01-splash-face-scan.jpg" alt="Noom face scan splash" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">AI face scan — Western demo user</div></div>
-          <div class="ev-item"><img src="assets/images/noom/09-green-foods-list.jpg" alt="Green foods list" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Green: skim milk, sauerkraut — not my kitchen</div></div>
-          <div class="ev-item"><img src="assets/images/noom/10-yellow-foods-rice.jpg" alt="Yellow foods rice" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Rice = yellow. For 3 billion people.</div></div>
-          <div class="ev-item"><img src="assets/images/noom/03-demographic-analysis.jpg" alt="Analyzing demographic responses" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"Millions of data points" — from whose kitchen?</div></div>
+        <div class="pyr-verdict"><p>The food I cook at home — rice, fish, vegetables, soup — is <strong>real food</strong>, made from scratch. Noom classifies it as a caution food. This is culturally-encoded bias presented as nutrition science.</p></div>
+        <div class="ev-row" style="margin-top:10px">
+          <div class="ev-item"><img src="assets/images/noom/09-green-foods-list.jpg" alt="Green foods" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Green: skim milk, sauerkraut</div></div>
+          <div class="ev-item"><img src="assets/images/noom/10-yellow-foods-rice.jpg" alt="Yellow rice" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Rice = yellow. 3 billion people.</div></div>
+          <div class="ev-item"><img src="assets/images/noom/01-splash-face-scan.jpg" alt="Face scan" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">AI face scan — Western demo user</div></div>
+          <div class="ev-item"><img src="assets/images/noom/03-demographic-analysis.jpg" alt="Demographic" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"Millions of data points" — from whose kitchen?</div></div>
         </div>
       </div>
     </div>
 
-    <!-- FAILURE 05 -->
+    <!-- F05 -->
     <div class="diag-card">
-      <div class="diag-top">
-        <div style="background:var(--moss)"></div>
+      <div class="diag-top"><div style="background:var(--moss)"></div>
         <div class="diag-head">
           <div>
             <div class="diag-meta">Failure 05 · Cooking Reality + Visual Defaults</div>
-            <div class="diag-title">Single-Person Cooking Model + Western Body as Default</div>
+            <div class="diag-title">Single-Person Cooking + Western Body as Default</div>
             <div style="margin-top:6px"><span class="bias-tag">Selection Bias</span><span class="bias-tag">Group Attribution Bias</span></div>
           </div>
           <span class="sev sev-m">Medium</span>
@@ -400,41 +398,39 @@
           <div class="col-item">One cook, one meal, for themselves</div>
           <div class="col-item">Western workout imagery represents the target user</div>
           <div class="col-item">"Clean Eating" is culturally universal in meaning</div>
-          <div class="col-item">Photo AI accurately detects portions from shared Asian dishes</div>
+          <div class="col-item">Photo AI accurately portions shared Asian dishes</div>
         </div>
         <div>
-          <div class="col-head">My Lived Experience</div>
-          <div class="col-item">BetterMe Guided Challenges: Western women as the visual default. Not one Asian face in the challenge marketing.</div>
-          <div class="col-item">Workout recommendations: Ballet Body Workout, Wall Pilates, Yoga. For a night-shift mother cooking for a family, the access and time assumptions are disconnected from reality.</div>
-          <div class="col-item">"Clean Eating" challenge makes no acknowledgment that Vietnamese home-cooked food is already clean, real, and from scratch.</div>
+          <div class="col-head">What I Observed</div>
+          <div class="col-item">BetterMe Guided Challenges: Western women as visual default. Not one Asian face in challenge marketing.</div>
+          <div class="col-item">Workout recommendations: Ballet Body Workout, Wall Pilates — for a night-shift mother cooking for a family.</div>
+          <div class="col-item">"Clean Eating" challenge makes no acknowledgment that Vietnamese home cooking is already clean, real, from scratch.</div>
         </div>
         <div>
           <div class="col-head">Diagnostic Note</div>
           <div class="note" style="color:var(--moss)">
             <div class="note-flag">Root Cause</div>
-            The product encodes a default user visually and structurally — in its marketing, its challenge content, and its cooking model. A Vietnamese woman cooking for her family is not the user this product was designed around, and every screen quietly reinforces that.
+            The product encodes a default user visually and structurally. A Vietnamese mother cooking for her family was not the user this product was designed around — and every screen quietly reinforces that.
           </div>
         </div>
       </div>
       <div class="evidence-strip">
-        <div class="ev-lbl">Evidence Screenshots</div>
+        <div class="ev-lbl">Evidence</div>
         <div class="ev-row">
-          <div class="ev-item"><img src="assets/images/betterme/01-challenges-western-body.jpg" alt="BetterMe challenges Western body" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Challenge marketing: Western default</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/06-workouts.jpg" alt="BetterMe workouts" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Ballet Body, Wall Pilates for a night-shift mother?</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/03-clean-eating-text.jpg" alt="Clean eating text" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"Clean Eating" — no mention of Asian home cooking</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/11-salmon-demo.jpg" alt="BetterMe salmon demo" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Demo: salmon, feta, microgreens at 0.1oz</div></div>
-          <div class="ev-item"><img src="assets/images/betterme/10-tracking-assistant.jpg" alt="BetterMe tracking assistant" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Western woman, Western kitchen as default</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/01-challenges-western-body.jpg" alt="Western default" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Challenge marketing: Western default</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/06-workouts.jpg" alt="Workouts" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Ballet Body, Wall Pilates — for whom?</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/03-clean-eating-text.jpg" alt="Clean eating" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">"Clean Eating" — no Asian home cooking</div></div>
+          <div class="ev-item"><img src="assets/images/betterme/11-salmon-demo.jpg" alt="Salmon demo" class="screenshot" onclick="openLightbox(this)"><div class="ev-caption">Demo: salmon, feta, microgreens</div></div>
         </div>
       </div>
     </div>
 
-    <!-- FAILURE 06 -->
-    <div class="diag-card">
-      <div class="diag-top">
-        <div style="background:var(--terra)"></div>
-        <div class="diag-head">
+    <!-- F06 -->
+    <div class="diag-card f06-card">
+      <div class="diag-top"><div style="background:var(--terra)"></div>
+        <div class="diag-head" style="background:var(--f06-bg)">
           <div>
-            <div class="diag-meta">Failure 06 · Implicit Bias · v2 Addition</div>
+            <div class="diag-meta" style="color:var(--terra)">Failure 06 · Implicit Bias · ★ v2 Addition</div>
             <div class="diag-title">The Unencumbered Individual Assumption</div>
             <div style="margin-top:6px"><span class="bias-tag">Implicit Bias</span><span class="bias-tag">Selection Bias</span></div>
           </div>
@@ -444,29 +440,25 @@
       <div class="diag-body">
         <div>
           <div class="col-head">System Assumption</div>
-          <div class="col-item">The user is an individual managing their own body, time, and food choices</div>
+          <div class="col-item">The user is one person managing their own body, time, and food choices</div>
           <div class="col-item">Self-care is separable from care for others</div>
-          <div class="col-item">"Food freedom" and "no restrictive diets" are universally available states</div>
+          <div class="col-item">"Food freedom" and "love yourself first" are universally available states</div>
           <div class="col-item">Behavioral change is primarily a personal psychology problem</div>
-          <div class="col-item">"Love yourself first" is actionable advice for all users equally</div>
         </div>
         <div>
-          <div class="col-head">My Lived Experience</div>
+          <div class="col-head">What I Observed</div>
           <div class="col-item">I am not one person making choices for myself. I am a system — a logistics operation running food, schedule, budget, and culture for my whole family.</div>
-          <div class="col-item">My food choices are constrained by what my children will eat, what my budget allows this week, what takes 30 minutes after a night shift, and what my culture recognizes as a real meal that nourishes people.</div>
-          <div class="col-item">"Love yourself first" is right advice. But it assumes the self is available to be loved first. For a mother running a household system, the self comes last — not from low self-worth, but because the system she runs has no pause button.</div>
-          <div class="col-item">Every review says Noom was "built by psychologists." That psychology was built for a self that is separable from its context. Mine is not.</div>
+          <div class="col-item">My food choices are constrained by what my children will eat, what my budget allows, what takes 30 minutes after a night shift, and what my culture recognizes as a real meal.</div>
+          <div class="col-item">"Love yourself first" is right advice. But it assumes the self is available to be loved first. For a mother running a household, the self comes last — not from low self-worth, but because the system she runs has no pause button.</div>
         </div>
         <div>
           <div class="col-head">Diagnostic Note</div>
           <div class="note" style="color:var(--terra)">
             <div class="note-flag">Root Cause — Implicit Bias</div>
-            The behavioral psychology research underlying these apps was conducted on a population where the individual self is assumed to be the primary unit of change. No rule says "not for mothers." The bias lives in what was never questioned: that the user has a self separable from the people she feeds, the budget she manages, and the schedule she does not control.
-            <br><br>
-            This is implicit bias — not in an explicit decision, but in structural invisibility. The caregiver as primary subject was never in the room when the model was built.
-            <div class="int-flag" style="margin-top:10px;background:rgba(181,71,42,0.07);border-color:rgba(181,71,42,0.3);color:var(--terra)">
-              <strong>→ Clinical AI Connection</strong>
-              Mental health AI tools trained on individualist behavioral markers misread caregiver lives as pathology. Waking at 2am = depression signal in training data. For a Vietnamese mother on night shift = Tuesday. Eating irregularly = disordered eating signal. For a mother who eats after her children are fed = love. The system reads her life as disorder because it was built to read a different life as normal.
+            The behavioral psychology research underlying these apps was conducted on a population where the individual self is the primary unit of change. No rule says "not for caregivers." The bias lives in who was never in the room when the model was built.
+            <div class="f06-clinical">
+              <div class="f06-clinical-label">→ Clinical AI Connection</div>
+              Mental health AI trained on individualist behavioral markers misreads caregiver lives as pathology. Waking at 2am = depression signal in the data. For a Vietnamese mother on night shift = Tuesday. Eating irregularly = disordered eating signal. For a mother who eats after her children are fed = love. The system reads her life as disorder because it was built to read a different life as normal.
             </div>
           </div>
         </div>
@@ -476,13 +468,13 @@
   </div><!-- end diag-stack -->
 </section>
 
-<!-- MARKETING VS REALITY -->
+<!-- 04 MARKETING VS REALITY -->
 <section id="marketing">
-  <div class="sec-lbl">03b — What the Apps Claim vs. What I Observed</div>
+  <div class="sec-lbl">04 — Marketing Claims vs. What I Observed</div>
   <div class="sec-title">Measuring the System Against Its Own Stated Objectives</div>
-  <div class="sec-body">Every public review of these apps describes successful outcomes from users who already fit the system's model. The gap between what the marketing claims and what the system delivers to a non-default user is itself a bias finding.</div>
+  <div class="sec-body">Every public review of these apps describes successful outcomes. The gap between what the marketing claims and what the system delivers to a non-default user is itself a bias finding. The non-default user who drops out is not in the review data — she is the selection bias.</div>
 
-  <div style="overflow-x:auto;">
+  <div style="overflow-x:auto">
     <table class="mkt-table">
       <thead>
         <tr>
@@ -495,158 +487,158 @@
       <tbody>
         <tr>
           <td class="app-tag noom-tag">Noom</td>
-          <td>"Comprehensive weight loss program <strong>customized to you</strong>"</td>
-          <td>Selected Vietnamese, Thai, Japanese cuisines. Received Pita Party Pizzas and Couscous on Day 1.</td>
+          <td class="mkt-claim">"Comprehensive weight loss program <strong>customized to you</strong>"</td>
+          <td>Selected Vietnamese, Thai, Japanese. Received Pita Party Pizzas + Couscous Day 1.</td>
           <td><span class="bias-tag">Group Attribution</span></td>
         </tr>
         <tr>
           <td class="app-tag noom-tag">Noom</td>
-          <td>"<strong>No restrictive diets</strong> or foods"</td>
-          <td>Rice classified as yellow caution food. The staple food of my household and 3 billion people is a food to limit.</td>
+          <td class="mkt-claim">"<strong>No restrictive diets</strong> or foods"</td>
+          <td>Rice = yellow caution food. Staple food of my household and 3 billion people classified as a food to limit.</td>
           <td><span class="bias-tag">Implicit Bias</span></td>
         </tr>
         <tr>
           <td class="app-tag noom-tag">Noom</td>
-          <td>"<strong>Complete personalized evaluation</strong>"</td>
-          <td>GLP-1 medication question asked regardless of user context. $270.94 charged for a plan that ignored stated preferences.</td>
+          <td class="mkt-claim">"Developed by <strong>psychologists</strong> to address the causes behind weight gain"</td>
+          <td>Psychology built for an unencumbered individual. No model for a mother whose food decisions are household logistics, not personal preference.</td>
+          <td><span class="bias-tag">Implicit Bias</span></td>
+        </tr>
+        <tr>
+          <td class="app-tag noom-tag">Noom</td>
+          <td class="mkt-claim">"<strong>Complete personalized evaluation</strong>"</td>
+          <td>$270.94 charged. GLP-1 drug question asked regardless of user context. Preferences stated — preferences ignored.</td>
           <td><span class="bias-tag">Selection Bias</span></td>
         </tr>
         <tr>
-          <td class="app-tag noom-tag">Noom</td>
-          <td>"Developed by <strong>psychologists</strong> to address the causes behind weight gain"</td>
-          <td>Psychology built for an unencumbered individual. No model for a mother whose food choices are household logistics, not personal preference.</td>
-          <td><span class="bias-tag">Implicit Bias</span></td>
-        </tr>
-        <tr>
           <td class="app-tag better-tag">BetterMe</td>
-          <td>"<strong>Personalized</strong> workout and meal plans based on your goals and preferences"</td>
-          <td>Challenge marketing uses Western women as the only visual default. Ballet Body Workout recommended for a night-shift mother of two.</td>
-          <td><span class="bias-tag">Implicit Bias</span></td>
-        </tr>
-        <tr>
-          <td class="app-tag better-tag">BetterMe</td>
-          <td>"BetterMe <strong>adapts to your needs</strong>"</td>
-          <td>Default sleep goal: 8 continuous hours. For a night-shift worker: 0% goal on a work night. System reads my schedule as failure.</td>
+          <td class="mkt-claim">"BetterMe <strong>adapts to your needs</strong>"</td>
+          <td>Default sleep goal: 8h. Night-shift worker: 0% on a work night. System reads my schedule as failure.</td>
           <td><span class="bias-tag">Reporting Bias</span></td>
         </tr>
         <tr>
           <td class="app-tag better-tag">BetterMe</td>
-          <td>"Suitable for <strong>beginners or experienced</strong> fitness enthusiasts"</td>
-          <td>No option for a mother cooking for a family of four on a tight budget with 30 minutes available after a night shift. That user does not exist in the app's model.</td>
+          <td class="mkt-claim">"Suitable for <strong>everyone</strong>, beginners to experienced"</td>
+          <td>No option for a mother cooking for four on a tight budget with 30 minutes after a night shift. That user does not exist in the app's model.</td>
           <td><span class="bias-tag">Implicit Bias</span></td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div style="background:var(--terra-bg);border-left:3px solid var(--terra);padding:14px 16px;margin-top:14px;font-size:13px;color:var(--ink2);line-height:1.7;">
-    <strong style="color:var(--terra);font-family:monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;display:block;margin-bottom:6px;">Audit Note</strong>
-    These apps describe their failures as the user's failures. Every public review surfaces successful outcomes from users who already fit the model. The non-default user who drops out is not in the review data — she is the selection bias.
-  </div>
 </section>
 
-<!-- REFRAME -->
-<section id="reframe">
-  <div class="sec-lbl">04 — Reframed Problem</div>
-  <div class="sec-title">The Question I Stopped Asking Myself</div>
-  <div class="reframe">
-    <div class="rf-col">
-      <div class="rf-tag rf-before">The question I used to ask</div>
-      <div class="rf-text">"Why can't I stick to the plan? Why do I keep giving up? <em>What's wrong with me?</em>"</div>
-    </div>
-    <div class="rf-col">
-      <div class="rf-tag rf-after">The question this audit asks instead</div>
-      <div class="rf-text">"Which assumptions did the system make that don't fit how I actually live — and <em>what type of bias caused each one?</em> Selection bias in the training data? Reporting bias in what gets measured? Group attribution bias in how my preferences were ignored?"</div>
-    </div>
-  </div>
-</section>
-
-<!-- INSIGHTS -->
-<section id="insights">
-  <div class="sec-lbl">05 — Key Insights</div>
-  <div class="sec-title">What Dropping Out of These Apps Actually Means</div>
-  <div class="ins-grid">
-    <div class="ins-card" data-n="1"><div class="ins-icon">🔗</div><div class="ins-title">Dropout is a design signal, not a motivation signal</div><div class="ins-body">Selection bias means users who persist are already those the system was built for. My dropout was the system working as designed — just not for me.</div></div>
-    <div class="ins-card" data-n="2"><div class="ins-icon">🏠</div><div class="ins-title">Eating is a household system, not an individual task</div><div class="ins-body">No app I tested was designed with a household as the primary unit. One cook, one pot, family eats — this is how most of the world actually operates.</div></div>
-    <div class="ins-card" data-n="3"><div class="ins-icon">🌾</div><div class="ins-title">Real home-cooked food is being penalized as "yellow"</div><div class="ins-body">The food pyramid places whole grains at its base. Noom places rice in the yellow caution category. The food I cook from scratch is classified as something to limit.</div></div>
-    <div class="ins-card" data-n="4"><div class="ins-icon">💸</div><div class="ins-title">Stacked payments are a trust collapse, not just friction</div><div class="ins-body">I track BetterMe's cancellation date on Google Calendar. That cognitive and financial burden is a system design choice — and it disproportionately affects budget-constrained users.</div></div>
-    <div class="ins-card" data-n="5"><div class="ins-icon">🧬</div><div class="ins-title">Collecting preference data ≠ using it</div><div class="ins-body">Noom asked my cuisines. I said Vietnamese, Thai, Japanese. It served me couscous. This gap is Group Attribution Bias — and it appears identically in clinical AI when demographic data is collected but outputs don't change.</div></div>
-    <div class="ins-card" data-n="6"><div class="ins-icon">🌙</div><div class="ins-title">Non-standard schedules are invisible to these systems</div><div class="ins-body">The sleep tracker shows 0% on my night-shift day. Reporting Bias means the system reads absence of standard-pattern data as failure rather than as a valid user life.</div></div>
-  </div>
-</section>
-
-<!-- PRINCIPLES -->
+<!-- 05 DESIGN PRINCIPLES -->
 <section id="principles">
-  <div class="sec-lbl">06 — Design Principles</div>
+  <div class="sec-lbl">05 — Design Principles</div>
   <div class="sec-title">What Would Have Made These Apps Work for Me</div>
   <div class="principles">
     <div class="prin-row"><div class="prin-n">P1</div><div class="prin-name">Design for meals, not individuals</div><div class="prin-why">Support household-scale meals as first-class. One cook, one pot, family eats — this is how most of the world eats.</div></div>
-    <div class="prin-row"><div class="prin-n">P2</div><div class="prin-name">If you collect it, use it</div><div class="prin-why">Asking about cuisine preferences and then ignoring them is worse than not asking. It signals the system is performing personalization without delivering it.</div></div>
-    <div class="prin-row"><div class="prin-n">P3</div><div class="prin-name">Classify food in cultural context</div><div class="prin-why">Rice is not a caution food for Vietnamese households — it is the foundation of a nutritionally-sound diet. Classification systems must reflect the population being served.</div></div>
-    <div class="prin-row"><div class="prin-n">P4</div><div class="prin-name">Favor approximation for shared meals</div><div class="prin-why">For soups and shared dishes, a rough estimate mode beats a precise logger that nobody uses past week two.</div></div>
+    <div class="prin-row"><div class="prin-n">P2</div><div class="prin-name">If you collect it, use it</div><div class="prin-why">Asking about cuisines and ignoring them is worse than not asking. It signals false personalization.</div></div>
+    <div class="prin-row"><div class="prin-n">P3</div><div class="prin-name">Classify food in cultural context</div><div class="prin-why">Rice is not a caution food. The food pyramid agrees. Classification must reflect the population being served.</div></div>
+    <div class="prin-row"><div class="prin-n">P4</div><div class="prin-name">Favor approximation for shared meals</div><div class="prin-why">For soups and shared dishes, a rough estimate beats a precise logger nobody uses past week two.</div></div>
     <div class="prin-row"><div class="prin-n">P5</div><div class="prin-name">Model non-standard schedules as valid</div><div class="prin-why">Night shift work and fragmented sleep are real patterns, not compliance failures. Design for them.</div></div>
-    <div class="prin-row"><div class="prin-n">P6</div><div class="prin-name">Transparent, non-stacked pricing</div><div class="prin-why">For budget-constrained households, stacked in-app purchases are a betrayal of trust. Total cost must be honest upfront.</div></div>
+    <div class="prin-row"><div class="prin-n">P6</div><div class="prin-name">Transparent, non-stacked pricing</div><div class="prin-why">For budget-constrained households, stacked in-app purchases are a betrayal of trust.</div></div>
+    <div class="prin-row prin-row-new"><div class="prin-n" style="color:var(--terra)">P7</div><div class="prin-name">Design for the caregiver subject ★ v2</div><div class="prin-why">Build a model for users whose self is inseparable from their household system. "Love yourself first" cannot reach a woman whose food decisions are family logistics operations.</div></div>
   </div>
 </section>
 
-<!-- QE MAP -->
+<!-- 06 QE MAP -->
 <section id="qe">
-  <div class="sec-lbl">07 — Clinical AI QE Skill Map</div>
-  <div class="sec-title">Why This Work Demonstrates AI Audit Methodology</div>
-  <div class="sec-body">The analytical moves in this audit map directly to Clinical AI Quality Engineering skills — applied to a consumer product rather than a medical system. The stakes are different. The methodology is the same.</div>
+  <div class="sec-lbl">06 — Clinical AI Quality Engineering Skill Map</div>
+  <div class="sec-title">From Personal UX Audit to Health AI Safety Mindset</div>
+  <div class="sec-body">This project started as a personal attempt to understand why diet apps made me feel like a failure. It became my first exercise in thinking like an AI quality engineer: where are the assumptions, who is missing from the data, and how do you prove it?</div>
   <div class="qe-map">
-    <div class="qe-title">From UX Diagnostic → Clinical AI QE Competency</div>
-    <div class="qe-sub">Each row maps a specific action in this audit to a named skill, then shows how it applies in clinical AI deployment.</div>
     <div class="qe-rows">
       <div class="qe-row">
-        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Classified 5 failure categories using Google Responsible AI bias framework</div></div>
+        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Classified 6 failures using selection, reporting, group attribution, and implicit bias types</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Bias Type Classification & Default User Bias Detection</div></div>
+        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Bias taxonomy, issue labeling, implicit bias detection</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Classifying whether a clinical AI failure is selection bias in training data, reporting bias in outcomes measurement, or group attribution bias in recommendation logic</div></div>
+        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Categorizing model issues as data imbalance, label noise, or structural bias</div></div>
       </div>
       <div class="qe-row">
-        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Compared Noom food classification to USDA food pyramid — documented factual contradiction</div></div>
+        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Named "Unencumbered Individual Assumption" as Failure 06 — implicit bias in behavioral health AI</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Ground Truth Validation — comparing AI outputs against established standards</div></div>
+        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Structural bias identification for caregivers and minority populations</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Validating whether a clinical AI recommendation contradicts established clinical guidelines such as drug dosage or diagnostic criteria</div></div>
+        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Reviewing models so caregiver behavior is not misread as depression, non-adherence, or "no data"</div></div>
       </div>
       <div class="qe-row">
-        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Flagged lactase statistic as needing citation — separated observation from statistical claim</div></div>
+        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Compared Noom food categories to USDA dietary guidance — documented factual contradiction</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Evidence Integrity — distinguishing observed failures from inferred root causes</div></div>
+        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Ground-truth validation against established standards</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">FDA SaMD validation requires this distinction. Overclaiming causes regulatory submissions to fail review.</div></div>
+        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Checking AI recommendations against clinical guidelines or lab reference ranges</div></div>
       </div>
       <div class="qe-row">
-        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Produced structured audit: failure → bias type → evidence → root cause → principle</div></div>
+        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Built marketing vs. reality table — tested app claims against observed behavior</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Validation Report Documentation for Regulatory Review</div></div>
+        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Specification and requirements compliance testing</div></div>
         <div class="qe-arrow">→</div>
-        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">FDA SaMD submissions and HIMSS compliance audits require exactly this structure. The format is the credential.</div></div>
+        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Verifying SaMD outputs against its labeling, indications, and instructions for use</div></div>
+      </div>
+      <div class="qe-row">
+        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Flagged uncited statistics — separated personal observation from statistical claims requiring citation</div></div>
+        <div class="qe-arrow">→</div>
+        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Evidence integrity and audit-ready documentation</div></div>
+        <div class="qe-arrow">→</div>
+        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Writing bias reports regulators can trace from claim → data → evidence. Overclaiming fails FDA SaMD review.</div></div>
+      </div>
+      <div class="qe-row">
+        <div class="qe-cell qa"><div class="qe-clbl">Work Done Here</div><div class="qe-work">Derived 7 design principles from the six failure patterns</div></div>
+        <div class="qe-arrow">→</div>
+        <div class="qe-cell qb"><div class="qe-clbl">Clinical AI QE Skill</div><div class="qe-skill">Risk-informed mitigation and requirement feedback</div></div>
+        <div class="qe-arrow">→</div>
+        <div class="qe-cell qc"><div class="qe-clbl">In a Clinical Context</div><div class="qe-apply">Translating failure patterns into new test cases and design requirements</div></div>
       </div>
     </div>
+    <div class="qe-goal">My goal over the next 2–3 years is to build on this foundation with more formal audits of AI-assisted health tools: multi-user scenarios, quantitative checks, and collaboration with clinicians and data scientists. This case is my "toe in the water" — honest, grounded in my own life, and pointed directly at the skills I want to grow.</div>
   </div>
 </section>
 
-<!-- REFLECTION -->
+<!-- 07 REFLECTION & NEXT STEPS -->
 <section id="reflection">
-  <div class="sec-lbl">08 — Reflection</div>
-  <div class="sec-title">What I Actually Learned from Failing at Every Diet App</div>
-  <div class="ref-pull">"The apps weren't broken. They just weren't built with me in mind — and that's a harder problem to name when you're the one feeling like the failure."</div>
+  <div class="sec-lbl">07 — Reflection & Next Steps</div>
+  <div class="sec-title">Learning to Stop Blaming Myself — and Starting to Name What Was Actually Wrong</div>
+  <div class="ref-pull">"Love yourself first is good advice — but only if the system ever gives you a self that is free to come first."</div>
   <div class="ref-body">
-    <p>Writing this took longer than I expected — not because the analysis was hard, but because I had to stop blaming myself first. Every time I dropped out of a diet app, I assumed it was a discipline problem. Now I have a name for what it actually was: selection bias, reporting bias, group attribution bias. The Google Responsible AI for Developers course gave me the vocabulary. My own experience provided the evidence.</p>
-    <p>The food I cook at home — cơm, canh, kho, cháo — is real food, made from scratch, nutritionally grounded. The food pyramid agrees. Noom classified it as a yellow caution food. That's not a minor UX problem. That's a core assumption encoded as science.</p>
-    <p>What surprised me is how naturally the diagnostic framework came. I've spent years as a medical interpreter — finding exactly where communication breaks down between two parties who don't share the same context. <em>Where does the system's model of the user diverge from the actual user?</em> That question has the same answer in a diet app and in a clinical AI tool. The stakes are just different.</p>
-    <p><em>The deepest finding came last — and it came from living, not from analysis.</em> These apps keep saying "find time for yourself," "love yourself first," "you deserve this." That advice is not wrong. But it assumes the self is separable from its context. For a mother, it is not. My food is my family's food. My time is the family's time. My relationship with food is actually a relationship between me, my children, my budget, my culture, and the clock. I am not one person making choices for myself. I am a system — a logistics operation. My meal decisions are not personal preferences. They are the household running. The apps were not built for that subject. And that absence — that structural invisibility — is implicit bias. Not a rule. Not a decision. Just: she was never in the room when the model was built.</p>
-    <p>This is v2. Failure 06 is new. The framework keeps growing — because the experience keeps teaching.</p>
+    <p>For a long time, I thought the apps were right and I was wrong. I thought a "good user" would love salads, track every gram, sleep eight hours, and buy every add-on challenge. I was not that user, so I felt like the failure.</p>
+    <p>Writing this diagnostic took longer than learning some frontend frameworks. The slowest part was not the analysis — it was stopping the habit of blaming myself. The Google Responsible AI fairness course gave me vocabulary: selection bias, reporting bias, group attribution bias, implicit bias. My own kitchen and schedule gave me the evidence.</p>
+    <p>The deepest finding for me was not about rice or streaks or pricing. It was about subject: these systems treat the user as a free, individual self. A mother running a household is not free like that. My food is my family's food. My time is my family's time. I am not one person making choices for myself — I am a logistics operation keeping everyone fed and on time. The apps were never built with that subject in mind. And that silence is a form of implicit bias.</p>
+  </div>
+
+  <div class="next-steps-grid">
+    <div class="next-col">
+      <div class="next-label">Next Steps — This Project</div>
+      <div class="next-item"><span class="ndot"></span>Add citations to nutrition guidance and health-app research (v3)</div>
+      <div class="next-item"><span class="ndot"></span>Run the same diagnostic with at least one other caregiver to see which patterns generalize (v3)</div>
+      <div class="next-item"><span class="ndot"></span>Apply this framework to a clinical AI or wellness tool with a clearer machine-learning core — to practice tracing bias from data to model to interface (v4)</div>
+    </div>
+    <div class="next-col">
+      <div class="next-label">Next Steps — Me</div>
+      <div class="next-item"><span class="ndot"></span>Keep learning how to turn lived experience, curiosity, and failure into disciplined quality work</div>
+      <div class="next-item"><span class="ndot"></span>Build toward AI quality and safety roles in healthcare — especially for the people who were never in the room when those systems were first designed</div>
+      <div class="next-item"><span class="ndot"></span>Relocating to Indiana August 2026 — targeting Regenstrief Institute, IU Health, Elevance Health</div>
+    </div>
+  </div>
+
+  <div class="version-table-wrap">
+    <div class="sec-lbl" style="margin-top:28px">Version History</div>
+    <table class="ver-table">
+      <thead><tr><th>Version</th><th>Date</th><th>Changes</th></tr></thead>
+      <tbody>
+        <tr><td>v1</td><td>March 22, 2026</td><td>Initial publication. 5 failure categories. 3 bias types.</td></tr>
+        <tr class="ver-current"><td>v2 ★</td><td>March 23, 2026</td><td>Failure 06: Unencumbered Individual Assumption (Implicit Bias). Marketing vs. Reality table. Mothers as Systems reflection. Restructured sections. 4 bias types. P7 added.</td></tr>
+        <tr class="ver-planned"><td>v3 — planned</td><td>Upcoming</td><td>NIH/PubMed citations. Peer-reviewed sources for implicit bias in wellness AI. Second user observation.</td></tr>
+        <tr class="ver-planned"><td>v4 — planned</td><td>Upcoming</td><td>Clinical AI tool audit applying same framework. AlterMe DNA-based platform analysis.</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
 </div><!-- end wrap -->
 
 <footer>
-  <div class="foot-l">© 2026 Võ Ngọc Dung (DixieV) · UX Diagnostic Case Study · Draft v2 · March 2026</div>
+  <div class="foot-l">© 2026 Võ Ngọc Dung (DixieV) · UX Diagnostic Case Study · Draft v2 · March 2026 · <a href="https://www.linkedin.com/in/dung-vo-25963376/" style="color:var(--ink3)">LinkedIn</a> · <a href="https://github.com/dvo10781-droid" style="color:var(--ink3)">GitHub</a></div>
   <div class="foot-tags">
     <span class="ftag">UX Audit</span>
     <span class="ftag">Bias Analysis</span>
@@ -657,28 +649,22 @@
 </footer>
 
 <script>
-// Progress bar
-window.addEventListener('scroll', () => {
-  const p = (window.scrollY / (document.documentElement.scrollHeight - innerHeight)) * 100;
-  document.getElementById('prog').style.width = p + '%';
+window.addEventListener('scroll',()=>{
+  const p=(window.scrollY/(document.documentElement.scrollHeight-innerHeight))*100;
+  document.getElementById('prog').style.width=p+'%';
 });
-
-// Lightbox
-function openLightbox(img) {
-  document.getElementById('lightbox-img').src = img.src;
-  document.getElementById('lightbox-img').alt = img.alt;
+function openLightbox(img){
+  document.getElementById('lightbox-img').src=img.src;
+  document.getElementById('lightbox-img').alt=img.alt;
   document.getElementById('lightbox').classList.add('active');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow='hidden';
 }
-function closeLightbox() {
+function closeLightbox(){
   document.getElementById('lightbox').classList.remove('active');
-  document.body.style.overflow = '';
+  document.body.style.overflow='';
 }
-document.getElementById('lightbox').addEventListener('click', function(e) {
-  if (e.target === this) closeLightbox();
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
 </script>
-
 </body>
 </html>
